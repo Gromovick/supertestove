@@ -1,0 +1,13 @@
+.button {
+  @include reset-button;
+  padding: 16px 32px;
+  background: var(--color-white);
+  color: var(--color-black);
+  border-radius: var(--border-radius-large);
+
+  &--transparent {
+    background: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+  }
+}

@@ -1,0 +1,106 @@
+.contact {
+  &__inner {
+  }
+  &__title {
+  }
+
+  &__content {
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-white-gray);
+    padding: 69px 50px;
+    display: flex;
+    gap: 80px;
+    overflow: hidden;
+    @include tablet {
+      justify-content: center;
+      padding: 47px 38px;
+    }
+  }
+
+  &__text {
+    flex: 1;
+    &-title {
+      color: var(--color-black);
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 18px;
+      }
+    }
+    &-description {
+      color: #636363;
+      margin-bottom: 20px;
+    }
+    &-image {
+      max-width: 184px;
+    }
+  }
+  &__form-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 415px;
+    flex: 1;
+    flex-basis: 415px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @include tablet {
+      gap: 12px;
+    }
+
+    &-input {
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-black);
+      border: none;
+      border-radius: var(--border-radius-large);
+      background-color: var(--color-white);
+      &::placeholder {
+        font-size: inherit;
+        font-weight: inherit;
+        color: #969696;
+      }
+      @include tablet {
+        font-size: 10px;
+      }
+    }
+    &-license {
+      padding-top: 9px;
+      color: #414141;
+      margin-bottom: 7px;
+      font-size: 14px;
+      line-height: 1.5;
+      @include tablet {
+        margin-bottom: 8px;
+        margin-top: 6px;
+        font-size: 10px;
+      }
+    }
+    &-submit {
+      text-transform: uppercase;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--color-white);
+      background: var(--color-black);
+      @include tablet{
+        font-size: 16px;
+      }
+    }
+    &-spot {
+      position: absolute;
+      width: 200%;
+      bottom: -300px;
+      left: 0;
+      z-index: -1;
+      transform: rotateZ(180deg);
+      @include mobile {
+        bottom: -180px;
+      }
+    }
+  }
+}

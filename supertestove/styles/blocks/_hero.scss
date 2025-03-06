@@ -1,0 +1,150 @@
+.hero {
+  background-color: var(--color-black);
+  padding: 140px 0 143px;
+  position: relative;
+  z-index: 2;
+  border-bottom-right-radius: 72px;
+  border-bottom-left-radius: 72px;
+  overflow: hidden;
+  @include tablet {
+    padding-bottom: 51px;
+  }
+
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+  }
+
+  &__inner,
+  &__content,
+  &__content-left,
+  &__content-right,
+  &__right-content {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    gap: 61px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__content-left {
+    @include tablet {
+      max-width: 305px;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 80px;
+    color: var(--color-light-gray-v2);
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    line-height: 1.2;
+
+    @include tablet {
+      padding: 8px 17px;
+    }
+  }
+
+  // Right Section
+  &__content-right {
+    position: relative;
+    flex-shrink: 0;
+
+    @include tablet {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__right-back {
+    position: relative;
+  }
+
+  &__image-main {
+    @include square(494px);
+
+    @include desktop {
+      @include square(400px);
+    }
+    @include tablet {
+      @include square(192px);
+    }
+  }
+
+  &__image-spot {
+    position: absolute;
+    top: 0;
+    left: -93px;
+    z-index: -1;
+    width: 423px;
+
+    @include tablet {
+      left: -60px;
+      top: -45px;
+      width: 306px;
+    }
+  }
+
+  &__right-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 32px;
+
+    @include tablet {
+      position: relative;
+      gap: 13px;
+      padding-top: 41px;
+    }
+  }
+
+  &__image-people {
+    width: 168px;
+
+    @include tablet {
+      width: 88px;
+    }
+  }
+
+  &__right-description {
+    color: var(--color-light-gray-v2);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 205px;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+}

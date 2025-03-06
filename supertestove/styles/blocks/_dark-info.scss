@@ -1,0 +1,77 @@
+.dark-info {
+  display: flex;
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-black);
+  //   gap: 20px;
+  align-items: center;
+  padding-left: 52px;
+  overflow: hidden;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    padding: 23px;
+  }
+  &__text {
+    flex-shrink: 1;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @include tablet {
+      padding: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 12px;
+    color: var(--color-white);
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #c8c8c8;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 10px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  &__button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 8px 16px;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    @include hover {
+      background: var(--color-white);
+      color: var(--color-black);
+    }
+
+    @include tablet {
+      font-size: 10px;
+      padding: 6px 7px;
+    }
+  }
+  &__image-wrapper {
+    max-width: 550px;
+    // height: 437px;
+    aspect-ratio: 550 / 437;
+    width: 100%;
+    align-self: flex-end;
+    @include tablet {
+      max-width: 223px;
+      aspect-ratio: 223 / 183;
+      margin-bottom: 36px;
+      align-self: center;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+.section__title {
+  margin-bottom: 40px;
+  color: var(--color-black);
+}
+
+.section {
+  padding-top: 200px;
+  @include tablet {
+    padding-top: 80px;
+  }
+}

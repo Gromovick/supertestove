@@ -1,0 +1,3423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo-link visible-tablet">
+            <img
+              class="header__logo logo"
+              src="./public/images/logo/logo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__list-item header__list-item--active">
+                <a href="#" class="header__item-link">Home</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">About us</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">Services</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">Portfolio</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">Blog</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">Pages</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__item-link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            id="burgerButton"
+            class="header__burger burger-button visible-tablet"
+          >
+            <span class="visually-hidden">Open navigation menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <img
+          src="./public/images/hero/back.png"
+          alt="Hero background"
+          class="hero__back"
+        />
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <div class="hero__content-left">
+                <h1 class="hero__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h1>
+                <p class="hero__description headline-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  officia molestiae dolorum tempora ut accusamus cupiditate!
+                  Nesciunt tempora reiciendis libero voluptate!
+                </p>
+                <button class="hero__button button button-text hidden-tablet">
+                  Зарегистрироваться
+                </button>
+              </div>
+              <div class="hero__content-right">
+                <div class="hero__right-back">
+                  <img
+                    class="hero__image-main"
+                    src="public/images/hero/main.png"
+                    alt="Main hero image"
+                  />
+                  <img
+                    class="hero__image-spot"
+                    src="public/images/hero/spot-light.png"
+                    alt="Main hero image spot light"
+                  />
+                </div>
+                <div class="hero__right-content">
+                  <img
+                    class="hero__image-people"
+                    src="public/images/hero/people.png"
+                    alt="Row of people"
+                  />
+                  <p class="hero__right-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit!
+                  </p>
+                </div>
+              </div>
+              <button class="hero__button button button-text visible-tablet">
+                Зарегистрироваться
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-who section">
+        <div class="container">
+          <div class="for-who__inner">
+            <h2 class="for-who__title section__title">
+              Кому буде корисний курс
+            </h2>
+            <div class="for-who__grid-wrapper">
+              <img
+                src="./public/images/for-who/back.png"
+                alt="For who background"
+                class="for-who__grid-back hidden-tablet"
+              />
+              <div class="for-who__grid">
+                <div class="for-who__grid-item for-who__grid-item--big">
+                  <h2 class="for-who__item-title">Trusted By Worldwide</h2>
+                  <p class="for-who__item-description headline-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                    officia molestiae dolorum tempora ut accusamus cupiditate!
+                    Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                </div>
+                <div class="for-who__grid-item">
+                  <h4 class="for-who__item-title">First On Field</h4>
+                  <p class="for-who__item-description headline-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+                <div class="for-who__grid-item">
+                  <h4 class="for-who__item-title">Worldwide</h4>
+                  <p class="for-who__item-description headline-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+                <div class="for-who__grid-item">
+                  <h4 class="for-who__item-title">Easy to reach</h4>
+                  <p class="for-who__item-description headline-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+                <div class="for-who__grid-item">
+                  <h4 class="for-who__item-title">24/7 Support</h4>
+                  <p class="for-who__item-description headline-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, iste
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="speakers section">
+        <div class="container">
+          <div class="speakers__inner">
+            <h2 class="speakers__title section__title">Спікери курсу</h2>
+            <div class="mySwiper swiper">
+              <div class="speakers__slider swiper-wrapper slider">
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/speakers/1.png"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >1/3</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/speakers/2.jpg"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >2/3</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/speakers/3.jpg"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >3/3</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cases section">
+        <div class="container">
+          <div class="cases__inner">
+            <h2 class="cases__title section__title">Кейси учнів</h2>
+            <div class="mySwiper swiper">
+              <div class="speakers__slider swiper-wrapper slider">
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/1.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >1/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/2.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >2/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/3.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >3/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/4.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >4/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/5.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >5/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/6.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >6/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/7.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >7/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/8.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >8/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/9.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >9/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/10.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >10/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/11.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >11/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="speakers__slider-item slider-item">
+                    <div
+                      class="speakers__slider-item-img-wrapper slider-item-img-wrapper"
+                    >
+                      <img
+                        class="speakers__slider-item-img slider-item-img"
+                        src="./public/images/cases/12.webp"
+                        alt="Speaker 1"
+                      />
+                    </div>
+                    <div
+                      class="speakers__slider-item-content slider-item-content"
+                    >
+                      <div
+                        data-card="web-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card slider-item-card--active"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Web Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="digital-marketing"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Digital Marketing
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="saas-products"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SaaS Products
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="apps-development"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Apps Development
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="seo-services"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          SEO Services
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        data-card="data-analysis"
+                        class="speakers__slider-item-card speakers__slider-item-card slider-item-card"
+                      >
+                        <h3
+                          class="speakers__slider-item-card-title slider-item-card-title"
+                        >
+                          Data Analysis
+                        </h3>
+                        <p
+                          class="speakers__slider-item-card-description slider-item-card-description headline-1"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Neque repellendus minima reiciendis nobis dolore
+                          obcaecati.
+                        </p>
+                      </div>
+                      <div
+                        class="speakers__slider-hash-buttons slider-hash-buttons"
+                      >
+                        <button
+                          data-hash="web-development"
+                          class="speakers__slider-hash-button speakers__slider-hash-button button button--transparent slider-hash-button slider-hash-button--active"
+                        >
+                          Web Development
+                        </button>
+                        <button
+                          data-hash="digital-marketing"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Digital Marketing
+                        </button>
+                        <button
+                          data-hash="saas-products"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SaaS Products
+                        </button>
+                        <button
+                          data-hash="apps-development"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Apps Development
+                        </button>
+                        <button
+                          data-hash="seo-services"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          SEO Services
+                        </button>
+                        <button
+                          data-hash="data-analysis"
+                          class="speakers__slider-hash-button button button--transparent slider-hash-button"
+                        >
+                          Data Analysis
+                        </button>
+                      </div>
+                      <div
+                        class="speakers__slider-navigation slider-navigation"
+                      >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-prev slider-navigation-button slider-navigation-prev"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.84278 11.069L1.23178 6.38399C1.13065 6.28177 1.07393 6.14378 1.07393 5.99999C1.07393 5.8562 1.13065 5.71821 1.23178 5.61599L5.84178 0.92999C5.94285 0.827134 5.99949 0.688696 5.99949 0.54449C5.99949 0.400283 5.94285 0.261845 5.84178 0.15899C5.7924 0.108341 5.73338 0.068089 5.66821 0.0406053C5.60303 0.0131216 5.53301 -0.0010376 5.46228 -0.0010376C5.39154 -0.0010376 5.32152 0.0131216 5.25635 0.0406053C5.19117 0.068089 5.13215 0.108341 5.08278 0.15899L0.472775 4.84299C0.169849 5.15151 0.000130653 5.56661 0.000130653 5.99899C0.000130653 6.43137 0.169849 6.84647 0.472775 7.15499L5.08278 11.839C5.13217 11.8898 5.19125 11.9302 5.25652 11.9577C5.32178 11.9853 5.39192 11.9995 5.46278 11.9995C5.53363 11.9995 5.60377 11.9853 5.66904 11.9577C5.73431 11.9302 5.79338 11.8898 5.84278 11.839C5.94385 11.7361 6.00049 11.5977 6.00049 11.4535C6.00049 11.3093 5.94385 11.1708 5.84278 11.068"
+                            />
+                          </svg>
+                        </button>
+                        <span
+                          class="speakers__slider-navigation-numeration slider-navigation-numeration"
+                          >12/12</span
+                        >
+                        <button
+                          class="speakers__slider-navigation-button speakers__slider-navigation-next slider-navigation-button slider-navigation-next"
+                        >
+                          <svg
+                            class="speakers__slider-navigation-icon slider-navigation-icon"
+                            viewBox="0 0 6 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.157224 11.069L4.76822 6.38399C4.86935 6.28177 4.92607 6.14378 4.92607 5.99999C4.92607 5.8562 4.86935 5.71821 4.76822 5.61599L0.158224 0.92999C0.0571484 0.827134 0.000512123 0.688696 0.000512123 0.54449C0.000512123 0.400283 0.0571484 0.261845 0.158224 0.15899C0.207601 0.108341 0.266617 0.068089 0.331794 0.0406053C0.396971 0.0131216 0.46699 -0.0010376 0.537724 -0.0010376C0.608459 -0.0010376 0.678477 0.0131216 0.743654 0.0406053C0.808831 0.068089 0.867847 0.108341 0.917224 0.15899L5.52722 4.84299C5.83015 5.15151 5.99987 5.56661 5.99987 5.99899C5.99987 6.43137 5.83015 6.84647 5.52722 7.15499L0.917224 11.839C0.867831 11.8898 0.808754 11.9302 0.743484 11.9577C0.678215 11.9853 0.608079 11.9995 0.537224 11.9995C0.466369 11.9995 0.396233 11.9853 0.330964 11.9577C0.265694 11.9302 0.206617 11.8898 0.157224 11.839C0.0561485 11.7361 -0.000488281 11.5977 -0.000488281 11.4535C-0.000488281 11.3093 0.0561485 11.1708 0.157224 11.068"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="career section">
+        <div class="container">
+          <div class="career__inner">
+            <h2 class="career__title section__title">Центр кар'єри</h2>
+            <div class="career__content dark-info">
+              <div class="career__text dark-info__text">
+                <h3
+                  class="career__content-title dark-info__title hidden-tablet"
+                >
+                  Для взрослых
+                </h3>
+                <p class="career__content-description dark-info__description">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <div
+                  class="career__content-buttons dark-info__buttons hidden-tablet"
+                >
+                  <button
+                    class="career__content-button dark-info__button button button--transparent"
+                  >
+                    Востребованные профессии
+                  </button>
+                  <button
+                    class="career__content-button dark-info__button button button--transparent"
+                  >
+                    Практика на реальных задачах
+                  </button>
+                </div>
+              </div>
+              <div class="career__image-wrapper dark-info__image-wrapper">
+                <img
+                  src="./public/images/career/guys.webp"
+                  alt=""
+                  class="career__image dark-info__image"
+                />
+              </div>
+              <div
+                class="career__content-buttons dark-info__buttons visible-tablet"
+              >
+                <button
+                  class="career__content-button dark-info__button button button--transparent"
+                >
+                  Востребованные профессии
+                </button>
+                <button
+                  class="career__content-button dark-info__button button button--transparent"
+                >
+                  Практика на реальных задачах
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experts section">
+        <div class="container">
+          <div class="experts__inner">
+            <h2 class="career__title section__title">Експертна спільнота</h2>
+            <div class="career__content dark-info">
+              <div class="career__text dark-info__text">
+                <h3
+                  class="career__content-title dark-info__title hidden-tablet"
+                >
+                  Центр карьеры
+                </h3>
+                <p class="career__content-description dark-info__description">
+                  ipsum dolor sit amet consectetur adipisicing elit. Quod, id
+                  sequi aut qui est ab, corporis quis maiores reiciendis
+                  explicabo odio tenetur nulla sint vel.
+                </p>
+                <div
+                  class="career__content-buttons dark-info__buttons hidden-tablet"
+                >
+                  <button
+                    class="career__content-button dark-info__button button button--transparent"
+                  >
+                    Востребованные профессии
+                  </button>
+                  <button
+                    class="career__content-button dark-info__button button button--transparent"
+                  >
+                    Практика на реальных задачах
+                  </button>
+                </div>
+              </div>
+              <div class="experts__image-wrapper dark-info__image-wrapper">
+                <img
+                  src="./public/images/experts/guy.webp"
+                  alt=""
+                  class="experts__image dark-info__image"
+                />
+              </div>
+              <div
+                class="career__content-buttons dark-info__buttons visible-tablet"
+              >
+                <button
+                  class="career__content-button dark-info__button button button--transparent"
+                >
+                  Востребованные профессии
+                </button>
+                <button
+                  class="career__content-button dark-info__button button button--transparent"
+                >
+                  Практика на реальных задачах
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contanct section">
+        <div class="container">
+          <div class="contact__inner">
+            <h2 class="contact__title section__title">Зв'язок з нами</h2>
+            <div class="contact__content">
+              <div class="contact__text hidden-tablet">
+                <h3 class="contact__text-title">
+                  Є питання? Зв’яжіться з нами!
+                </h3>
+                <p class="contact__text-description headline-1">
+                  Наша команда готова допомогти вам з будь-якими питаннями, які
+                  у вас можуть виникнути. Просто заповніть форму нижче і ми з
+                  вами зв’яжемось протягом 24 годин.
+                </p>
+                <img
+                  src="./public/images/hero/main.png"
+                  alt=""
+                  class="contact__text-image"
+                />
+              </div>
+
+              <div class="contact__form-wrapper">
+                <form action="" class="contact__form">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Ваше ім'я*"
+                    class="contact__form-input"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Ваш email*"
+                    class="contact__form-input"
+                  />
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="Ваш телефон*"
+                    class="contact__form-input"
+                  />
+
+                  <p class="contact__form-license headline-3">
+                    Залишаючи свої дані, я погоджуюся на обробку персональних
+                    даних відповідно до Політики конфіденційності
+                  </p>
+
+                  <button class="contact__form-submit button" type="submit">
+                    ВІДПРАВИТИ
+                  </button>
+                </form>
+                <img
+                  src="./public/images/contact/spot.png"
+                  alt=""
+                  class="contact__form-spot"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <img
+            src="./public/images/logo/logo.svg"
+            alt="Logo"
+            class="footer__logo logo"
+          />
+          <p class="footer__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque?
+            Voluptatem magnam quisquam rem.
+          </p>
+          <p class="footer__license hidden-tablet">
+            © 2024 Created by: Kozyr Vsevolod
+          </p>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-wrapper">
+            <p class="footer__title">Contact Information</p>
+            <div class="footer__email-wrapper">
+              <svg
+                class="footer__email-icon footer__contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_10026_3371)">
+                  <path
+                    d="M19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 7L12 13L21 7"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10026_3371">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="footer__email footer__contact-info"
+                >example@support.com</span
+              >
+            </div>
+            <div class="footer__map-wrapper">
+              <svg
+                class="footer__map-icon footer__contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_10026_3364)">
+                  <path
+                    d="M18 6V6.01"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18 13L14.5 8C14.1631 7.39103 13.9909 6.70469 14.0004 6.00879C14.0099 5.3129 14.2008 4.63152 14.5543 4.032C14.9077 3.43248 15.4115 2.93555 16.0158 2.59032C16.6201 2.24509 17.304 2.06351 18 2.06351C18.696 2.06351 19.3799 2.24509 19.9842 2.59032C20.5885 2.93555 21.0923 3.43248 21.4457 4.032C21.7992 4.63152 21.9901 5.3129 21.9996 6.00879C22.0091 6.70469 21.8369 7.39103 21.5 8L18 13Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.5 4.75L9 4L3 7V20L9 17L15 20L21 17V15"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 4V17"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 15V20"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10026_3364">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="footer__map-adress footer__contact-info"
+                >5 xyz st., adc, vallhalla</span
+              >
+            </div>
+          </div>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Terms of Use</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </div>
+        </div>
+        <p class="footer__license visible-tablet">
+          © 2024 Created by: Kozyr Vsevolod
+        </p>
+      </div>
+    </footer>
+    <div id="modalMenu" class="modal__menu-wrapper">
+      <button id="closeButton" class="modal__close close-button">
+        <span class="visually-hidden">Close navigation menu</span>
+      </button>
+      <div class="modal__menu">
+        <a href="#" class="modal__menu-logo-link visible-tablet">
+          <img
+            class="modal__menu-logo logo"
+            src="./public/images/logo/logo-dark.svg"
+            alt="logo"
+          />
+        </a>
+        <nav class="modal__menu-navigation">
+          <ul class="modal__menu-list">
+            <li class="modal__menu-item modal__menu-item--active">
+              <a href="#" class="modal__menu-link">Home</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">About us</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">Services</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">Portfolio</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">Blog</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">Pages</a>
+            </li>
+            <li class="modal__menu-item">
+              <a href="#" class="modal__menu-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.footer {
+  &__inner {
+    border-top-left-radius: var(--border-radius-large);
+    border-top-right-radius: var(--border-radius-large);
+    background: var(--color-black);
+    padding: 40px 108px;
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      padding: 37px 36px;
+    }
+  }
+  &__text {
+    max-width: 400px;
+    flex: 1;
+  }
+  &__logo {
+    width: 74px;
+    height: 29px;
+    margin-bottom: 34px;
+    @include tablet {
+      width: 52px;
+      height: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    color: var(--color-white);
+    margin-bottom: 94px;
+    @include tablet {
+      font-size: 12px;
+      max-width: 253px;
+      margin-bottom: 34px;
+    }
+  }
+  &__license {
+    font-size: 16px;
+    @include tablet {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+  }
+  &__contact {
+    // flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    &-icon {
+      width: 18px;
+    }
+    &-info {
+      font-size: 16px;
+      color: var(--color-white);
+    }
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__email-wrapper,
+  &__map-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 12.5px;
+  }
+
+  &__links {
+    padding-top: 50px;
+    display: flex;
+    gap: 32px;
+    margin-top: auto;
+    @include tablet {
+        flex-direction: column;
+        gap: 13px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+  }
+  &__link {
+    color: var(--color-white);
+    font-size: 16px;
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+}

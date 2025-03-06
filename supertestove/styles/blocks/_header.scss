@@ -1,0 +1,89 @@
+.header {
+  background-color: var(--color-black);
+  padding: 20px 0;
+
+  position: relative;
+  z-index: 2;
+
+  &__inner {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo-link {
+    @include reset-link;
+
+    @include tablet-above {
+    }
+  }
+
+  &__logo {
+  }
+
+  &__navigation {
+  }
+  &__list {
+    display: flex;
+    gap: 8px;
+    // justify-content: space-between;
+    justify-content: center;
+    @include desktop {
+      gap: 6px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
+    &-item {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21.6px;
+      color: var(--color-white);
+
+      border-radius: var(--border-radius-large);
+      flex-shrink: 0;
+      position: relative;
+      background: transparent;
+      padding: 8px 32px;
+
+      &--active {
+        color: var(--color-black);
+        background: var(--color-white-gray);
+      }
+
+      @include hover {
+        color: var(--color-black);
+        background: var(--color-white-gray);
+      }
+
+      &:has(a:focus) {
+        color: var(--color-black);
+        background: var(--color-white-gray);
+      }
+
+      @include desktop {
+        font-size: 16px;
+        padding: 6px 20px;
+      }
+    }
+  }
+  &__item-link {
+    width: 100%;
+    height: 100%;
+    @include flex-center();
+  }
+
+  &__burger {
+    @include tablet-above {
+      display: none;
+    }
+    &--active {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

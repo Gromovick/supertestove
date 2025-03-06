@@ -1,0 +1,15 @@
+.experts {
+  &__inner {
+  }
+
+  &__image-wrapper {
+    max-width: 600px;
+
+    aspect-ratio: 600 / 544;
+
+    @include tablet {
+      max-width: 281px;
+      aspect-ratio: 281 / 241;
+    }
+  }
+}
